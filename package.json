@@ -1,7 +1,6 @@
 {
   "name": "@glenn_chiang/react-starter",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -16,6 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^1.6.6",
+    "ora": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.49.3",
@@ -42,7 +42,9 @@
     "type": "git",
     "url": "git+https://github.com/Glenn-Chiang/react-starter.git"
   },
-  "main": "src/main.tsx",
+  "bin": {
+    "react-starter": "bin/cli.js"
+  },
   "keywords": [],
   "author": "Glenn Chiang",
   "license": "ISC",
